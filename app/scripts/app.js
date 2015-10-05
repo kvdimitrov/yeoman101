@@ -15,8 +15,12 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
+    'ngTouch',
+    'ui.sortable',
+        'LocalStorageModule'
+  ]).config(['localStorageServiceProvider', function(localStorageServiceProvider){
+        localStorageServiceProvider.setPrefix('ls');
+    }])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -29,6 +33,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+        .when('/todo', {
+          templateUrl: 'views/todo.html',
+          controller: 'TodoCtrl',
+          controllerAs: 'todo'
+        })
       .otherwise({
         redirectTo: '/'
       });

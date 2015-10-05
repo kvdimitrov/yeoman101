@@ -437,7 +437,7 @@ module.exports = function (grunt) {
     'connect:test',
     'karma'
   ]);
-
+  grunt.loadNpmTasks('grunt-karma');
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
