@@ -1,0 +1,124 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\kalin\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'yo',
+1 verbose cli   'bower' ]
+2 info using npm@3.3.5
+3 info using node@v4.1.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData yo
+8 silly fetchPackageMetaData bower
+9 silly fetchNamedPackageData yo
+10 silly mapToRegistry name yo
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/yo
+14 silly fetchNamedPackageData bower
+15 silly mapToRegistry name bower
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/bower
+19 verbose request uri https://registry.npmjs.org/bower
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 5:45:26 PM
+22 verbose request id 5fe4c9ed2aee2e0b
+23 verbose etag "9HRYO8VFJFIXAO47KE43FACXA"
+24 http request GET https://registry.npmjs.org/bower
+25 verbose request uri https://registry.npmjs.org/yo
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 5:45:26 PM
+28 verbose etag "DAQVLE3ZMA0PJDHVKU4CY5D2W"
+29 http request GET https://registry.npmjs.org/yo
+30 http 304 https://registry.npmjs.org/bower
+31 verbose headers { date: 'Fri, 02 Oct 2015 14:45:35 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   etag: '"9HRYO8VFJFIXAO47KE43FACXA"',
+31 verbose headers   age: '47',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-fra1237-FRA',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '1511',
+31 verbose headers   'x-timer': 'S1443797135.475602,VS0,VE0',
+31 verbose headers   vary: 'Accept' }
+32 silly get cb [ 304,
+32 silly get   { date: 'Fri, 02 Oct 2015 14:45:35 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     'cache-control': 'max-age=60',
+32 silly get     etag: '"9HRYO8VFJFIXAO47KE43FACXA"',
+32 silly get     age: '47',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-fra1237-FRA',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '1511',
+32 silly get     'x-timer': 'S1443797135.475602,VS0,VE0',
+32 silly get     vary: 'Accept' } ]
+33 verbose etag https://registry.npmjs.org/bower from cache
+34 verbose get saving bower to C:\Users\kalin\AppData\Roaming\npm-cache\registry.npmjs.org\bower\.cache.json
+35 http 304 https://registry.npmjs.org/yo
+36 verbose headers { date: 'Fri, 02 Oct 2015 14:45:35 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   'cache-control': 'max-age=60',
+36 verbose headers   etag: '"DAQVLE3ZMA0PJDHVKU4CY5D2W"',
+36 verbose headers   age: '49',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-fra1248-FRA',
+36 verbose headers   'x-cache': 'HIT',
+36 verbose headers   'x-cache-hits': '1',
+36 verbose headers   'x-timer': 'S1443797135.476139,VS0,VE0',
+36 verbose headers   vary: 'Accept' }
+37 silly get cb [ 304,
+37 silly get   { date: 'Fri, 02 Oct 2015 14:45:35 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     'cache-control': 'max-age=60',
+37 silly get     etag: '"DAQVLE3ZMA0PJDHVKU4CY5D2W"',
+37 silly get     age: '49',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-fra1248-FRA',
+37 silly get     'x-cache': 'HIT',
+37 silly get     'x-cache-hits': '1',
+37 silly get     'x-timer': 'S1443797135.476139,VS0,VE0',
+37 silly get     vary: 'Accept' } ]
+38 verbose etag https://registry.npmjs.org/yo from cache
+39 verbose get saving yo to C:\Users\kalin\AppData\Roaming\npm-cache\registry.npmjs.org\yo\.cache.json
+40 silly install normalizeTree
+41 silly loadCurrentTree Finishing
+42 silly loadIdealTree Starting
+43 silly install loadIdealTree
+44 silly cloneCurrentTree Starting
+45 silly install cloneCurrentTreeToIdealTree
+46 silly cloneCurrentTree Finishing
+47 silly loadShrinkwrap Starting
+48 silly install loadShrinkwrap
+49 silly loadShrinkwrap Finishing
+50 silly loadAllDepsIntoIdealTree Starting
+51 silly install loadAllDepsIntoIdealTree
+52 silly rollbackFailedOptional Starting
+53 silly rollbackFailedOptional Finishing
+54 silly runTopLevelLifecycles Starting
+55 silly runTopLevelLifecycles Finishing
+56 silly install printInstalled
+57 verbose stack Error: Refusing to install yo as a dependency of itself
+57 verbose stack     at checkSelf (C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:40:14)
+57 verbose stack     at Array.<anonymous> (C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+57 verbose stack     at LOOP (C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+57 verbose stack     at chain (C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+57 verbose stack     at C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:15:5
+57 verbose stack     at C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+57 verbose stack     at Array.forEach (native)
+57 verbose stack     at C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+57 verbose stack     at Array.forEach (native)
+57 verbose stack     at asyncMap (C:\Users\kalin\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+58 verbose cwd C:\wamp\www\yo
+59 error Windows_NT 10.0.10240
+60 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\kalin\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "yo" "bower"
+61 error node v4.1.1
+62 error npm  v3.3.5
+63 error code ENOSELF
+64 error Refusing to install yo as a dependency of itself
+65 error If you need help, you may report this error at:
+65 error     <https://github.com/npm/npm/issues>
+66 verbose exit [ 1, true ]
